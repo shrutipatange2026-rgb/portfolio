@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Shruti Patange Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f9fbfc; /* light soft background */
+}
+
+header{
+background:#5d8aa8; /* professional blue */
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.profile{
+width:160px;
+border-radius:50%;
+border:5px solid white;
+}
+
+nav{
+background:#e6f0fa; /* light grey nav */
+text-align:center;
+padding:12px;
+}
+
+nav button{
+background:#5d8aa8; /* button color */
+color:white;
+border:none;
+padding:10px 18px;
+margin:5px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+.container{
+width:85%;
+margin:auto;
+margin-top:30px;
+}
+
+.card{
+display:none;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.project{
+background:#f1f5f9;
+padding:15px;
+margin-top:10px;
+border-radius:8px;
+}
+
+button.link{
+margin-top:10px;
+background:#5d8aa8;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#5d8aa8;
+color:white;
+text-align:center;
+padding:12px;
+margin-top:30px;
+}
+
+</style>
+
+<script>
+
+function openSection(id){
+
+var sections=document.getElementsByClassName("card");
+
+for(var i=0;i<sections.length;i++){
+sections[i].style.display="none";
+}
+
+document.getElementById(id).style.display="block";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Shruti Vikas Patange</h1>
+
+<img src="image.jpeg" class="profile">
+
+<p>BBA (CA) Student | Aspiring Software Developer</p>
+
+</header>
+
+<nav>
+
+<button onclick="openSection('about')">About</button>
+<button onclick="openSection('education')">Education</button>
+<button onclick="openSection('skills')">Skills</button>
+<button onclick="openSection('projects')">Projects</button>
+<button onclick="openSection('certificates')">Certificates</button>
+<button onclick="openSection('contact')">Contact</button>
+
+</nav>
+
+<div class="container">
+
+<div id="about" class="card">
+
+<h2>About Me</h2>
+
+<p>
+I am currently pursuing BBA (CA) – Bachelor of Business Administration in Computer Applications 
+from Prof. Ramkrishna More College, Akurdi, Pune. I have a strong interest in software development 
+and web technologies. During my academic journey I have worked on projects like Student Management 
+System, Online Quiz System and an Online Shopping Website frontend. These projects helped me 
+understand programming logic, user interface design and basic web development concepts. 
+I enjoy learning new technologies and continuously improving my coding and problem solving skills. 
+I aim to begin my career in the IT industry and grow as a software developer.
+</p>
+
+</div>
+
+<div id="education" class="card">
+
+<h2>Education</h2>
+
+<p>
+<b>BBA (CA)</b><br>
+Prof. Ramkrishna More College, Akurdi, Pune (Autonomous)<br>
+Year: 2023 – 2026<br>
+Average (Sem 1 – 5): 71.24%
+</p>
+
+<br>
+
+<p>
+<b>HSC – Maharashtra State Board</b><br>
+Kai Nagnath Maruti Gadsingh Jr. College<br>
+Year: 2022 – 2023<br>
+Percentage: 68.33%
+</p>
+
+<br>
+
+<p>
+<b>SSC – Maharashtra State Board</b><br>
+Saraswati Madhyamik Vidyalay, Akurdi, Pune<br>
+Year: 2020 – 2021<br>
+Percentage: 87.60%
+</p>
+
+</div>
+
+<div id="skills" class="card">
+
+<h2>Skills</h2>
+
+<p><b>Programming Languages:</b> C++, Python, Java</p>
+
+<p><b>Web Technologies:</b> HTML, CSS, JavaScript</p>
+
+<p><b>Tools & Software:</b> MS Office</p>
+
+</div>
+
+<div id="projects" class="card">
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<b>Student Management System</b>
+
+<p>
+A system developed to manage student records including adding,
+updating and deleting student details. It helps in organizing
+student information efficiently.
+</p>
+
+</div>
+
+<div class="project">
+
+<b>Online Quiz System</b>
+
+<p>
+Online quiz platform that allows users to attempt multiple choice
+questions and automatically calculates the score at the end.
+</p>
+
+</div>
+
+<div class="project">
+
+<b>Online Shopping Website (Frontend)</b>
+
+<p>
+Developed a frontend shopping website including login page,
+product page, cart section and about page using HTML, CSS
+and JavaScript.
+</p>
+
+</div>
+
+<div class="project">
+
+<b>Portfolio Website</b>
+
+<p>
+Personal portfolio website created to showcase my education,
+skills and projects for recruiters and professional networking.
+</p>
+
+</div>
+
+</div>
+
+<div id="certificates" class="card">
+
+<h2>Certificates</h2>
+
+<p><b>Sysslan Internship Certificate</b></p>
+
+<a href="SyssalnC.jpeg" target="_blank">
+<button class="link">View Certificate</button>
+</a>
+
+<br><br>
+
+<p><b>Technical Certificate</b></p>
+
+<a href="HeXC.jpeg" target="_blank">
+<button class="link">View Certificate</button>
+</a>
+
+</div>
+
+<div id="contact" class="card">
+
+<h2>Contact</h2>
+
+<p>Email: shrutipatange2026@gmail.com</p>
+
+<p>City: Pune</p>
+
+<a href="https://www.linkedin.com/in/shrutipatange" target="_blank">
+<button class="link">Open LinkedIn</button>
+</a>
+
+<br><br>
+
+<a href="resume.pdf" download>
+<button class="link">Download Resume</button>
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>©  Shruti Vikas Patange </p>
+
+</footer>
+
+</body>
+</html>
